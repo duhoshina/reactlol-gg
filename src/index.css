@@ -1,13 +1,52 @@
-body {
+/* <-- variaveis css --> */
+:root {
+  --roxo-padrao: #6C3DFB;
+  --roxo-padrao-hover: #4627a5;
+
+}
+
+/* <-- tags --> */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-image: url('./img/320x480/background-pattern.png');
+  background-position: none;
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  color: white;
+  background-color: var(--roxo-padrao);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 50px;
+  width: 180px;
+  height: 40px;
+  border: none;
+  box-shadow: 0px 11px 41px -15px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 11px 41px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 11px 41px -15px rgba(0,0,0,0.75);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--roxo-padrao-hover);
+}
+
+/* <-- classes --> */
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
