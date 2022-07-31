@@ -3,5 +3,5 @@ export const wordList = {
   mago: ['lux', 'syndra'],
   adc: ['vayne', 'tristana'],
   utility: ['lulu', 'karma', 'ivern'],
-  tanque: ['malphite', 'maokai', 'shen'],
+  tanque: ['volibear', 'maokai', 'shen'],
 }
