@@ -1,4 +1,3 @@
-
 // imports para data
 import { wordList } from './data/wordList'
 
@@ -7,11 +6,13 @@ import './App.css';
 
 // imports para componentes
 import HomePage from './components/HomePage';
+import Game from './components/Game';
+import GameOver from './components/GameOver';
+import Links from './components/Links';
+
 
 // imports para hooks
 import { useState, useCallback, useEffect } from 'react'
-import Game from './components/Game';
-import GameOver from './components/GameOver';
 
 const stageScreen = [
   {id: 1, name: 'start'},
@@ -65,7 +66,7 @@ function App() {
     setPickedCategory(category)
     setLetters(wordLetters)
 
-    setGameStage(stageScreen[1].name)
+     setGameStage(stageScreen[1].name)
   }, [pickWordAndCategory])
 
   // validar as letras
@@ -98,6 +99,7 @@ function App() {
   const clearLetterStates = () => {
     setGuessedLetters([])
     setWrongLetters([])
+    setScore(0)
   }
 
   useEffect(() => {
@@ -113,7 +115,7 @@ function App() {
   // validar se a pessoa ganhou
   useEffect(() => {
 
-    const uniqueLetters = [... new Set(letters)]
+    const uniqueLetters = [...new Set(letters)]
 
     if(guessedLetters.length === uniqueLetters.length){
       setScore((actualScore) => actualScore += 100)
@@ -125,7 +127,7 @@ function App() {
 
   const tryAgain = () => {
     setScore(0)
-    setGuesses(3)
+    setGuesses(guessesQty)
     setGameStage(stageScreen[0].name)
   }
 
@@ -142,6 +144,8 @@ function App() {
       guesses={guesses}
       score={score} />}
       {gameStage === 'gameOver' && <GameOver score={score} tryAgain={tryAgain}/>}
+      <Links />
+      <p>Desenvolvido por Luis Eduardo Hoshina</p>
     </div>
   );
 }

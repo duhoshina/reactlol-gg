@@ -19,16 +19,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  background-image: url('./img/320x480/background-pattern.png');
+  background-image: url('./img/background.png');
   background-position: none;
   background-size: cover;
 }
 
-button {
+button, a {
   color: white;
   background-color: var(--roxo-padrao);
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
   border-radius: 50px;
   width: 180px;
   height: 40px;
@@ -39,7 +40,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover, a:hover {
   background-color: var(--roxo-padrao-hover);
 }
 
@@ -49,4 +50,18 @@ button:hover {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+@media (min-width: 545px) {
+  body {
+    background-image: url('./img/background-ipads.png');;
+  }
+}
+
+@media (min-width: 975px) {
+  body {
+    background-image: url('./img/background-desktop.png');;
+  }
 }

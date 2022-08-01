@@ -21,9 +21,10 @@ h3 {
 .wordContainer {
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  width: 85%;
 }
 
 .wordContainer span {
@@ -44,4 +45,8 @@ form {
   align-items: center;
   justify-content: space-around;
   height: 100px;
+}
+
+form input {
+border: 2px solid #000;
 }

@@ -1,0 +1,12 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  padding-top: 8px;
+  text-transform: none;
+}
