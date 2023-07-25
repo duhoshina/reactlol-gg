@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Visão Geral
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao Jogo de Adivinhação do Campeão do League of Legends!<br><br> Este é um jogo desenvolvido em ReactJS inspirado no clássico "Jogo da Forca".<br><br> O objetivo é adivinhar o nome de um campeão do League of Legends, sorteado aleatoriamente pelo sistema. Você deve inserir uma letra e o sistema verificará se ela está presente no nome do campeão. Se a letra estiver correta, ela será revelada na posição correta. Caso contrário, você perderá uma vida. O jogo permite um total de 3 vidas. Ao zerar, o jogo reiniciará e você poderá tentar novamente.
+### Live Preview: https://hangman-game.pages.dev/
 
-## Available Scripts
+![Imagem ou Logo do Projeto](https://github.com/duhoshina/jogo-whatThisChampionLOL/blob/f5c52e6b841314836e2d3b1939af08fb44a3427a/Screenshot%20from%202023-07-25%2007-48-25.png)
 
-In the project directory, you can run:
+## Índice
 
-### `npm start`
+- [Visão Geral](#visão-geral)
+- [Funcionalidades](#funcionalidades)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Contato](#contato)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Sorteio aleatório do nome de um campeão do League of Legends.
+- Interface interativa e amigável para inserção das letras.
+- Validação das letras inseridas pelo usuário.
+- Exibição do progresso da adivinhação do nome do campeão, mostrando as letras corretas.
+- Contagem de vidas e reinício do jogo quando as vidas se esgotam.
 
-### `npm test`
+## Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org) instalado na máquina.
 
-### `npm run build`
+## Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone este repositório para o seu ambiente local:<br>
+```git clone https://github.com/duhoshina/jogo-whatThisChampionLOL.git```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navegue até o diretório do projeto: <br>
+```cd jogo-whatThisCampionLOL```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Instale as dependências do projeto:<br>
+```npm install```
 
-### `npm run eject`
+## Uso
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Inicie o servidor de desenvolvimento: <br>
+```npm start```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Abra o jogo no seu navegador, acessando [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. O jogo iniciará automaticamente com um campeão sorteado. Insira uma letra e clique em "Verificar" para tentar adivinhar o nome do campeão.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Continue adivinhando as letras corretas até descobrir o nome completo do campeão.
 
-## Learn More
+5. Se errar três vezes, o jogo reiniciará e você terá uma nova chance de adivinhar.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contato
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para mais informações sobre o projeto, entre em contato:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: contato@luishoshina.com
+- GitHub: github.com/duhoshina
